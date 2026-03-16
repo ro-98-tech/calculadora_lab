@@ -12,7 +12,7 @@
 
 ---
 
-## 🧩 Tecnologías usadas
+## Tecnologías usadas
 
 - Java 17+
 - Spring Boot
@@ -21,7 +21,7 @@
 
 ---
 
-## 🏁 ¿Cómo ejecutar ?
+## ¿Cómo ejecutar?
 
 ###  Desde la terminal (Windows)
 Abre una consola en `calc-backend/` y ejecuta:
@@ -30,7 +30,7 @@ Abre una consola en `calc-backend/` y ejecuta:
 .\mvnw.cmd spring-boot:run
 ```
 
-✅ Luego abre en tu navegador:
+ Luego abre en tu navegador:
 
 ```
 http://localhost:8080/
@@ -38,12 +38,12 @@ http://localhost:8080/
 
 ---
 
-## 🧪 Cómo probar la API (ejemplo con curl)
+##  ¿Cómo probar la API (ejemplo con curl)?
 
 ### Endpoint principal:
 `POST /api/calc`
 
-📥 Body JSON:
+Body JSON:
 
 ```json
 {
@@ -53,7 +53,7 @@ http://localhost:8080/
 }
 ```
 
-📤 Respuesta:
+ Respuesta:
 
 ```json
 {
@@ -69,7 +69,7 @@ http://localhost:8080/
 
 ---
 
-## 📂 Estructura clave
+##  Estructura clave
 
 - `src/main/java/com/calculator/calc_backend/controller/CalcController.java` → endpoints
 - `src/main/java/com/calculator/calc_backend/service/CalcService.java` → lógica de operaciones
@@ -81,7 +81,7 @@ http://localhost:8080/
 
 ---
 
-## ✅ Compilar y generar JAR
+##  Compilar y generar JAR
 
 ```powershell
 .\mvnw.cmd clean package
@@ -97,9 +97,3 @@ java -jar target\calc-backend-0.0.1-SNAPSHOT.jar
 
 ---
 
-## 🎯 Ideas para mejorar (opcional)
-
-- Manejar división por 0 con validación y error claro.
-- Agregar historial de cálculos en el frontend.
-- Añadir más operaciones (potencia, raíz, porcentaje, etc.).
-- Agregar tests unitarios para `CalcService`.
