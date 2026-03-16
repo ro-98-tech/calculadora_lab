@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CalcLab • Bulbasaur Edition</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <h1 class="title">Calculadora Bulbasaur</h1>
+
+    <div class="card">
+        <label class="label" for="num1">Primer número</label>
+        <input type="number" id="num1" class="input" placeholder="Ej. 9" inputmode="decimal" />
+
+        <label class="label" for="num2">Segundo número</label>
+        <input type="number" id="num2" class="input" placeholder="Ej. 3" inputmode="decimal" />
+
+        <!-- Operadores y botón "=" -->
+        <div class="ops" role="group" aria-label="Operación">
+            <button type="button" data-op="+" aria-pressed="false">+</button>
+            <button type="button" data-op="-" aria-pressed="false">−</button>
+            <button type="button" data-op="*" aria-pressed="false">×</button>
+            <button type="button" data-op="/" aria-pressed="false">÷</button>
+            <button type="button" id="equals" class="equals-btn" disabled>=</button>
+        </div>
+
+        <!-- Visual de operación seleccionada + mensajes -->
+        <div class="op-display">
+            <span>Operación seleccionada:</span>
+            <strong id="op-display">—</strong>
+        </div>
+        <div id="msg" class="msg" role="status" aria-live="polite"></div>
+
+        <div class="result-box">
+            <span>Resultado:</span>
+            <strong id="result">—</strong>
+        </div>
+    </div>
+
+    <h2 class="section-title">Historial</h2>
+    <div class="history-box">
+        <ul id="history"></ul>
+        <button id="clear-history" class="clear-btn" type="button">Limpiar historial</button>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
